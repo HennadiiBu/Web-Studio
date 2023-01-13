@@ -1,0 +1,42 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__box {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    &__link {
+            display: flex;
+            width: 170px;
+            height: 92px;
+            border: 1px solid var(--social-bkg-color);
+            fill: var(--social-bkg-color);
+            border-radius: 4px;
+            transition-property: border-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+    &__link:hover,
+    &__link:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+}
+
+.clients-icon {
+    display: block;
+
+    margin: 16px 32px;
+}
+
