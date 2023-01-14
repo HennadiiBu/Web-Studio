@@ -1,20 +1,28 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    &__box {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-        }
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // &__box {
+    //         display: flex;
+    //         gap: 30px;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
     &__list{
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @media  screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__item {
             display: flex;
-            width: 170px;
+            align-items: center;
+            justify-content: center;
+            width: calc((100% - 1*30px) / 2);
             height: 92px;
             border: 1px solid var(--social-bkg-color);
             fill: var(--social-bkg-color);

@@ -1,5 +1,10 @@
 .conteiner {
-    width: 1200px;
+    width: 100%;
     padding: 0px 15px;
     margin: 0 auto;
+
+    @media screen and (width:480px) {
+        width: 480px;
+        
+    }
 }
