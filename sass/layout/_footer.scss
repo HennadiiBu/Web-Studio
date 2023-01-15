@@ -215,7 +215,7 @@
 .box-input-sub {
     display: block;
 
-        @media screen and (memailin-width:1200px){
+        @media screen and (min-width:1200px){
             display: flex;
             align-items: baseline;
             gap: 12px;
@@ -242,3 +242,4 @@
 .icon-send {
     fill: var(--main-background);
 }
+

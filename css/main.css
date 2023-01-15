@@ -1003,7 +1003,7 @@ body {
 .box-input-sub {
   display: block;
 }
-@media screen and (memailin-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .box-input-sub {
     display: -webkit-box;
     display: -ms-flexbox;
