@@ -2,25 +2,75 @@
     background-color: var(--button-bkg-color);
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &__title{
+        font-size: 28px;
+        line-height: calc(33px/28px);
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }
 
 .our-team {
-    display: flex;
-    gap: 30px;
+    display: block;
+
     margin-top: 50px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-width: 768px;
+        margin: 50px auto 0 auto;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-width: 100%;
+    }
 
     &__card {
         text-align: center;
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
+
+            @media screen and (wifth:768px) {
+
+            width: calc((100% - 1*30px) / 2);
+                
+            }
         }
     
+    &__photo {
+
+        width: 100%;
+        // max-width: 450px;
+
+        @media screen and (min-width:768px) {
+            max-width: 345px;
+        }
+
+        @media screen and (min-width:768px) {
+            max-width: 270px;
+        }
+
+    }
+
     &__text {
         text-align: center;
         }
     
     &__box {
+        
+        // max-width: 450px;
+
         background-color: var(--main-background);
         padding: 30px;
         }
@@ -38,6 +88,8 @@
 
 .social {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-top: 16px;
 
