@@ -298,13 +298,31 @@ body {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .features__title {
   font-weight: 700;
@@ -315,19 +333,41 @@ body {
 }
 
 .features-listbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .features-listbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-listbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-listbox__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-listbox__card {
+    width: 270px;
+  }
 }
 .features-listbox__text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  width: 270px;
-}
-.features-listbox__card:not(:last-child) {
-  margin-right: 30px;
 }
 .features-listbox__title {
   font-weight: 700;
@@ -336,9 +376,19 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features-listbox__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-listbox__title {
+    text-align: left;
+  }
 }
 .features-listbox__icon {
-  width: 270px;
   height: 120px;
   background-color: var(--button-bkg-color);
   border-radius: 4px;
@@ -352,6 +402,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features-listbox__icon {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-listbox__icon {
+    width: 270px;
+  }
 }
 
 .works {

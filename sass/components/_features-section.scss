@@ -1,9 +1,23 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
 
     &__box {
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
     
     &__title {
@@ -18,19 +32,37 @@
 
 
 .features-listbox {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        gap: 30px;
+    }
+
+    &__card{
+            @media screen and (min-width: 768px) {
+                    width: calc((100% - 1*30px)/2);
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    width: 270px;
+                }
+    }
 
     &__text {
             margin-top: 10px;
             font-size: 14px;
             line-height: 1.714;
             letter-spacing: 0.03em;
-            width: 270px;
         }
     
-        &__card:not(:last-child) {
-            margin-right: 30px;
-        }
+
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -38,10 +70,18 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--main-color);
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+        text-align: left;
+        }
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
 
     &__icon {
-        width: 270px;
+
         height: 120px;
         background-color: var(--button-bkg-color);
         border-radius: 4px;
@@ -49,6 +89,14 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
+
+            @media screen and (min-width: 768px){
+                width: 100%;
+            }
+
+            @media screen and (min-width: 1200px){
+                width: 270px;
+            }
     }
 }
 
