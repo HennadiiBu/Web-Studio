@@ -5,33 +5,62 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     &__title {
+        max-width: 360px;
             color: var(--main-background);
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.363;
+            font-size: 26px;
+            line-height: calc(42px/26px);
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            width: 696px;
             box-sizing: content-box;
             margin: auto;
+
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: calc(60px/44px);
+        }
+
+       
         }
 }
 
 .hero-button {
-    width: 216px;
+    width: 200px;
     height: 50px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+        @media screen and (min-width: 768px){
+
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 216px;
+        }
+    }
 
 .button:hover,
 .button:focus {
