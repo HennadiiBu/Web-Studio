@@ -8,6 +8,8 @@
             display: block;
         }
 
+
+
     &__link {
         display: flex;
         justify-content: center;
@@ -70,6 +72,8 @@
                 display: inline-block;
                 margin-bottom: 0;
             }
+
+
 }
 
 .logo-white {
@@ -98,6 +102,9 @@
     @media screen and (min-width:1200px) {
         display: block;
     }
+
+
+
 }
 
 
@@ -224,6 +231,7 @@
 }
 
 .input-email {
+    margin-left: 0;
     margin-bottom: 20px;
     padding-left: 18px;
     width: 450px;
@@ -234,8 +242,15 @@
     color: var(--input-color);
     outline: none;
 
-        @media screen and (min-width:1200px){
+
+
+        @media screen and (min-width:768px){
+            margin-left: calc(50% - 450px / 2);
+        }
+
+        @media screen and (min-width:1200px) {
             width: 358px;
+            margin-left: 0;
         }
 }
 
@@ -243,3 +258,14 @@
     fill: var(--main-background);
 }
 
+.box-footer-tablet{
+@media screen and (min-width:1200px) {
+    display: flex;
+}
+
+@media screen and (min-width:768px) {
+display: flex;
+justify-content: space-around;
+}
+
+}

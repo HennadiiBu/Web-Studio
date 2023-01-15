@@ -1016,6 +1016,7 @@ body {
 }
 
 .input-email {
+  margin-left: 0;
   margin-bottom: 20px;
   padding-left: 18px;
   width: 450px;
@@ -1026,14 +1027,37 @@ body {
   color: var(--input-color);
   outline: none;
 }
+@media screen and (min-width: 768px) {
+  .input-email {
+    margin-left: calc(50% - 225px);
+  }
+}
 @media screen and (min-width: 1200px) {
   .input-email {
     width: 358px;
+    margin-left: 0;
   }
 }
 
 .icon-send {
   fill: var(--main-background);
+}
+
+@media screen and (min-width: 1200px) {
+  .box-footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box-footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .backdrop {
