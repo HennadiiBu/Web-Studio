@@ -4,6 +4,7 @@
 
 .box-header {
   display: flex;
+  justify-content: space-between;
 }
 
 .header__nav {
@@ -12,6 +13,11 @@
 
 .logo--header {
   padding: 16px 0 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
@@ -22,10 +28,22 @@
 .logo-accent {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    letter-spacing: 0.03em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31px / 26px);
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo-dark {
@@ -35,10 +53,28 @@
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    letter-spacing: 0.03em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31px / 26px);
+    letter-spacing: 0.03em;
+  }
 }
 
 .site-navigation {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    margin-left: 88px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -72,11 +108,29 @@
 .header-contacts {
   display: none;
 
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 21px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     gap: 50px;
     padding-left: 0;
+    margin-top: 0;
+  }
+
+  &__list:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -92,13 +146,28 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__icon {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  &__icon--phone {
+    @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 14px;
+    }
   }
 
   &__link:hover,
@@ -130,10 +199,19 @@
 }
 
 .burger {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
   height: 796px;
   background-color: white;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -144,9 +222,23 @@
   }
 }
 
+.hidden {
+  right: -101%;
+}
+
+.is-open {
+  right: 0;
+}
+
 .burger-nav {
   margin-top: 48px;
   margin-left: 40px;
+}
+
+.burger-nav__list:hover,
+.burger-nav__list:focus {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 .burger-nav__list:not(:last-child) {
@@ -163,6 +255,7 @@
 
 .burger-contacts {
   margin-top: 306px;
+  margin-left: 40px;
 }
 
 .burger-contacts__link--tel {
@@ -190,6 +283,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 64px;
+  margin-left: 40px;
 }
 
 .burger-social__link {
@@ -206,4 +300,22 @@
 
 .burger-social__list:not(:first-child) {
   padding-left: 10px;
+}
+
+.burger__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  padding: 0;
+  border: 0;
+  background-color: var(--main-background);
+  fill: var(--main-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
 }
