@@ -193,11 +193,32 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="list our-team">
             <li class="our-team__card">
-              <img
-                class="our-team__photo"
-                src="./images/photo-product-desinger.jpg"
-                alt="Ігор Дем'яненко, дизайнер продукту"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-sec480@2х/img.jpg 1x, ./images/team-sec480@2х/img.jpg 2x"
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team-sec768@1х/img.jpg 1x, ./images/team-sec768@2х/img.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/photo-product-desinger.jpg    1x,
+                    ./images/photo-product-desinger@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="our-team__photo"
+                  src="./images/photo-product-desinger.jpg"
+                  alt="Ігор Дем'яненко, дизайнер продукту"
+                />
+              </picture>
+
               <div class="our-team__box">
                 <h3 class="our-team__name">Ігор Дем'яненко</h3>
                 <p class="text our-team__text">Product Designer</p>
@@ -234,11 +255,35 @@
               </div>
             </li>
             <li class="our-team__card">
-              <img
-                class="our-team__photo"
-                src="./images/photo-frontend-dev.jpg"
-                alt="Ольга Рєпіна, фронтенд розробник"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-sec480@1х/img-1.jpg 1x,
+                    ./images/team-sec480@2х/img-1.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team-sec768@1х/img-1.jpg 1x,
+                    ./images/team-sec768@2х/img-1.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/photo-frontend-dev.jpg 1x, ./images/photo-frontend-dev@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="our-team__photo"
+                  src="./images/photo-frontend-dev.jpg"
+                  alt="Ольга Рєпіна, фронтенд розробник"
+                />
+              </picture>
+
               <div class="our-team__box">
                 <h3 class="our-team__name">Ольга Рєпіна</h3>
                 <p class="text our-team__text">Frontend Developer</p>
@@ -275,11 +320,35 @@
               </div>
             </li>
             <li class="our-team__card">
-              <img
-                class="our-team__photo"
-                src="./images/photo-marketing.jpg"
-                alt="Микола Тарасов, маркетинг"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-sec480@1х/img-2.jpg 1x,
+                    ./images/team-sec480@2х/img-2.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team-sec768@1х/img-2.jpg 1x,
+                    ./images/team-sec768@2х/img-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/photo-marketing.jpg 1x, ./images/photo-marketing@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="our-team__photo"
+                  src="./images/photo-marketing.jpg"
+                  alt="Микола Тарасов, маркетинг"
+                />
+              </picture>
+
               <div class="our-team__box">
                 <h3 class="our-team__name">Микола Тарасов</h3>
                 <p class="text our-team__text">Marketing</p>
@@ -316,11 +385,35 @@
               </div>
             </li>
             <li class="our-team__card">
-              <img
-                class="our-team__photo"
-                src="./images/photo-ui-desinger.jpg"
-                alt="Михайло Єрмаков, дизайнер інтерфейсу"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-sec480@1х/img-3.jpg 1x,
+                    ./images/team-sec480@2х/img-3.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team-sec768@1х/img-3.jpg 1x,
+                    ./images/team-sec768@2х/img-3.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/photo-ui-desinger.jpg 1x, ./images/photo-ui-desinger@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="our-team__photo"
+                  src="./images/photo-ui-desinger.jpg"
+                  alt="Михайло Єрмаков, дизайнер інтерфейсу"
+                />
+              </picture>
+
               <div class="our-team__box">
                 <h3 class="our-team__name">Михайло Єрмаков</h3>
                 <p class="text our-team__text">UI Designer</p>
