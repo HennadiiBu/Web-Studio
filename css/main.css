@@ -519,6 +519,12 @@ body {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-bkg-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-bkg-2x.jpg);
+  }
+}
 .hero-button {
   width: 200px;
   height: 50px;
@@ -677,11 +683,14 @@ body {
 }
 
 .works {
+  display: none;
   padding-bottom: 94px;
 }
 @media screen and (max-width: 1200px) {
   .works {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

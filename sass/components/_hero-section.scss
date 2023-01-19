@@ -1,87 +1,91 @@
 .hero {
-    background-color: var(--secondary-background);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Hero-bkg.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    max-width: 1600px;
-    margin: 0 auto;
+  background-color: var(--secondary-background);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero-bkg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    max-width: 360px;
+    color: var(--main-background);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42px / 26px);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    box-sizing: content-box;
+    margin: auto;
 
     @media screen and (min-width: 768px) {
-        
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
+      max-width: 696px;
+      font-size: 44px;
+      line-height: calc(60px / 44px);
     }
+  }
+}
 
-    &__title {
-        max-width: 360px;
-            color: var(--main-background);
-            font-weight: 900;
-            font-size: 26px;
-            line-height: calc(42px/26px);
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            box-sizing: content-box;
-            margin: auto;
-
-
-        @media screen and (min-width: 768px) {
-
-        }
-
-        @media screen and (min-width: 1200px) {
-            max-width: 696px;
-            font-size: 44px;
-            line-height: calc(60px/44px);
-        }
-
-       
-        }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Hero-bkg-2x.jpg);
+  }
 }
 
 .hero-button {
-    width: 200px;
-    height: 50px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  height: 50px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
+  }
 
-        }
-
-        @media screen and (min-width: 1200px){
-            width: 216px;
-        }
-    }
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+  }
+}
 
 .button:hover,
 .button:focus {
-    background-color: var(--button-hero-active);
+  background-color: var(--button-hero-active);
 }
 
 .button--primary {
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    color: var(--main-background);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.625;
-    cursor: pointer;
-    border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--main-background);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.625;
+  cursor: pointer;
+  border: none;
 }
 
 .button--position {
-    left: 50%;
-    margin: 0 auto;
-    display: block;
-    margin-top: 30px;
+  left: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
 }
