@@ -1665,7 +1665,7 @@ body {
 
 .burger-contacts {
   margin-left: 40px;
-  margin-bottom: 0;
+  margin-bottom: 48px;
 }
 
 .burger-box {
@@ -1683,10 +1683,16 @@ body {
 
 .burger-contacts__link--tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 24px;
+  line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .burger-contacts__link--tel {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .burger-contacts__list:not(:last-child) {
@@ -1712,14 +1718,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 64px;
-  margin-left: 40px;
 }
 
 .burger-social__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 12px;
+  line-height: 1.8333333333;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .burger-social__link {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .burger-social__list:not(:last-child) {
