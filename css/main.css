@@ -1195,13 +1195,6 @@ body {
   fill: var(--main-background);
 }
 
-@media screen and (min-width: 1200px) {
-  .box-footer-tablet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 @media screen and (min-width: 768px) {
   .box-footer-tablet {
     display: -webkit-box;
@@ -1209,6 +1202,19 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
