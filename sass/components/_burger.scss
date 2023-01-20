@@ -76,8 +76,20 @@
 }
 
 .burger-contacts {
-  margin-top: 306px;
   margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: auto;
+
+  // @media screen and (min-width: 480px) {
+  //   margin-top: 306px;
+  // }
+}
+
+.burger-box {
+  @media screen and(max-width:479px) {
+    position: absolute;
+    bottom: 48px;
+  }
 }
 
 .burger-contacts__link--tel {

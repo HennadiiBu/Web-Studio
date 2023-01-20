@@ -1,115 +1,112 @@
 .team {
-    background-color: var(--button-bkg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+  background-color: var(--button-bkg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-    &__title{
-        font-size: 28px;
-        line-height: calc(33px/28px);
-        text-align: center;
-        letter-spacing: 0.03em;
-    }
+  &__title {
+    font-size: 28px;
+    line-height: calc(33px / 28px);
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .our-team {
-    display: block;
+  display: block;
 
-    margin-top: 50px;
+  margin-top: 50px;
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        max-width: 768px;
-        margin: 50px auto 0 auto;
-
+  @media screen and(max-width:767px) {
+    .our-team__card:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
 
-    @media screen and (min-width:1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        max-width: 100%;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 768px;
+    margin: 50px auto 0 auto;
+  }
 
-    &__card {
-        text-align: center;
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-
-            @media screen and (wifth:768px) {
-
-            width: calc((100% - 1*30px) / 2);
-                
-            }
-        }
-    
-    &__photo {
-
-        width: 100%;
-        // max-width: 450px;
-
-        @media screen and (min-width:768px) {
-            max-width: 345px;
-        }
-
-        @media screen and (min-width:768px) {
-            max-width: 270px;
-        }
-
-    }
-
-    &__text {
-        text-align: center;
-        }
-    
-    &__box {
-        
-        // max-width: 450px;
-
-        background-color: var(--main-background);
-        padding: 30px;
-        }
-    
-    &__name {
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.188;
-        letter-spacing: 0.03em;
-        }
-}
-
-
-
-.social {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 16px;
+    gap: 30px;
+    max-width: 100%;
+  }
 
-    &__link {
-        width: 44px;
-        height: 44px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        fill: var(--social-bkg-color);
-        transition-property: fill, background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-    &__link:hover,
-    &__link:focus {
-        background-color: var(--accent-color);
-        fill: var(--main-background);
-        }
+  &__card {
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (wifth: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    // max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 345px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 270px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__box {
+    // max-width: 450px;
+
+    background-color: var(--main-background);
+    padding: 30px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+  }
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--social-bkg-color);
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+    fill: var(--main-background);
+  }
+}

@@ -484,6 +484,11 @@ body {
     width: 270px;
   }
 }
+@media screen and (max-width: 767px) {
+  .features-listbox .features-listbox__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .features-listbox__text {
   margin-top: 10px;
   font-size: 14px;
@@ -606,6 +611,11 @@ body {
 .our-team {
   display: block;
   margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .our-team .our-team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-team {
@@ -837,16 +847,16 @@ body {
 
 .clients__icon {
   display: block;
-  margin: 16px 52px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .clients__icon {
-    margin: 16px 60px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__icon {
-    margin: 16px 32px;
+    margin: auto;
   }
 }
 
@@ -1130,13 +1140,18 @@ body {
   margin-bottom: 20px;
   padding-left: 18px;
   padding-right: 18px;
-  width: 433px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   border: 1px solid var(--border-input-color);
   background-color: var(--secondary-background);
   color: var(--input-color);
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .input-email {
+    width: 433px;
+  }
 }
 @media screen and (min-width: 768px) {
   .input-email {
@@ -1649,8 +1664,16 @@ body {
 }
 
 .burger-contacts {
-  margin-top: 306px;
   margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .burger-box {
+    position: absolute;
+    bottom: 48px;
+  }
 }
 
 .burger-contacts__link--tel {
