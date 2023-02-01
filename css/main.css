@@ -1233,7 +1233,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow: scroll;
+  overflow: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
@@ -1247,16 +1247,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    max-width: 450px;
-    min-heightt: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 528px;
-    min-heightt: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
