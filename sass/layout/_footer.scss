@@ -47,6 +47,8 @@
   background-color: var(--secondary-background);
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
 
   .footer-box {
     @media screen and (min-width: 1200px) {
