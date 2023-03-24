@@ -71,31 +71,49 @@
       <section class="projects">
         <div class="conteiner">
           <h1 class="visually-hidden">Фільтр по проектам</h1>
-          <ul class="list projects__nav">
-            <li>
-              <button class="button button--primary button--prime-box" type="button">Усі</button>
-            </li>
-            <li>
-              <button class="button button--secondary button--sec-box" type="button">
-                Веб-сайти
-              </button>
-            </li>
-            <li>
-              <button class="button button--secondary button--sec-box" type="button">
-                Додатки
-              </button>
-            </li>
-            <li>
-              <button class="button button--secondary button--sec-box" type="button">Дизайн</button>
-            </li>
-            <li>
-              <button class="button button--secondary button--sec-box" type="button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
+          <nav>
+            <ul class="list projects__nav">
+              <li>
+                <button data-f="all" class="button button--secondary button--sec-box" type="button">
+                  Усі
+                </button>
+              </li>
+              <li>
+                <button
+                  data-f="website"
+                  class="button button--secondary button--sec-box"
+                  type="button"
+                >
+                  Веб-сайти
+                </button>
+              </li>
+              <li>
+                <button data-f="app" class="button button--secondary button--sec-box" type="button">
+                  Додатки
+                </button>
+              </li>
+              <li>
+                <button
+                  data-f="design"
+                  class="button button--secondary button--sec-box"
+                  type="button"
+                >
+                  Дизайн
+                </button>
+              </li>
+              <li>
+                <button
+                  data-f="marketing"
+                  class="button button--secondary button--sec-box"
+                  type="button"
+                >
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </nav>
           <ul class="list projects-list">
-            <li class="projects-list__card">
+            <li class="projects-list__card website box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -115,7 +133,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card design box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -137,7 +155,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card app box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -159,7 +177,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card marketing box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img class="projects__img" src="./images/portfolio-4.jpg" alt="навушники" />
@@ -175,7 +193,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card app box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img class="projects__img" src="./images/portfolio-5.jpg" alt="коробки" />
@@ -191,7 +209,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card website box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -213,7 +231,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card design box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img class="projects__img" src="./images/portfolio-7.jpg" alt="журнал" />
@@ -231,7 +249,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card marketing box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -251,7 +269,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__card">
+            <li class="projects-list__card app box">
               <a class="projects-list__link link" href="#">
                 <div class="project-img-container">
                   <img
@@ -417,5 +435,6 @@
     </div>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
